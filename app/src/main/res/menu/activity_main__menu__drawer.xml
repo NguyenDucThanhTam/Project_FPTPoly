@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:name="android:paddingTop"
+        android:title="">10dp</item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_plan"
+            android:icon="@mipmap/ic_plan"
+            android:title="@string/attraction_place" />
+        <item
+            android:id="@+id/nav_checkin"
+            android:icon="@mipmap/ic_bestcheckin"
+            android:title="Best Check In" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/ic_alert"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_city"
+            android:icon="@mipmap/ic_city"
+            android:title="City Safely" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@mipmap/ic_checklist"
+            android:title="Check List" />
+        <item
+            android:id="@+id/nav_travel_tips"
+            android:icon="@mipmap/ic_travel_tips"
+            android:title="Travel Tips" />
+        <item
+            android:id="@+id/nav_travel_guides"
+            android:icon="@mipmap/ic_travel_guide"
+            android:title="Travel Guides" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/ic_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@mipmap/ic_feedback"
+            android:title="Feed Back" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@mipmap/ic_about"
+            android:title="About Us" />
+    </group>
+</menu>

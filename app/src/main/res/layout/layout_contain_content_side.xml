@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_row_attrac"
+    tools:context=".Main_Menu_Activity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft_txt_attractionplace"
+            android:text="@string/attraction_place" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/blue_underline"
+            android:layout_marginRight="@dimen/marginLeft_txt_viewall"
+            android:text="@string/view_all"
+            />
+    </LinearLayout>
+    <include layout="@layout/list_place_activity_main"/>
+
+</LinearLayout>

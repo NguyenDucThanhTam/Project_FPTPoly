@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_result">#984e7ad3</color>
+    <color name="white">#ffffff</color>
+    <color name="button_login_facebook">#0921f7</color>
+    <color name="button_login_google">#ae2121</color>
+    <color name="button_login_user">#908c9294</color>
+    <color name="view_login_activity">#ab605d5d</color>
+    <color name="txtOr">#cccccc</color>
+    <color name="text_clock_digital" />
+    <color name="color_spinner" >#c5809cef</color>
+    <color name="view_line">#393939</color>
+    <color name="rippleColor">#2442e7</color>
+    <color name="background_ripple">#b600ace9</color>
+    <color name="black">#01212121</color>
+    <color name="blue_underline">#2f13ca</color>
+</resources>

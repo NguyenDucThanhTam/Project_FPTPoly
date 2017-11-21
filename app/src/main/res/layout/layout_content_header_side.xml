@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    tools:context=".Main_Menu_Activity">
+    <ImageView
+        android:id="@+id/br_contain_header_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/br_contain_header"
+        android:scaleType="fitXY"
+        android:fitsSystemWindows="true"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:background="@drawable/br_spinner"
+        android:layout_width="@dimen/width_spinner"
+        android:layout_height="25dp">
+        <Spinner
+            android:id="@+id/spinner_contain_header_side"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:textDirection="inherit"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:spinnerMode="dropdown"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_drop_down" />
+    </RelativeLayout>
+
+    <!--weather-->
+</RelativeLayout>

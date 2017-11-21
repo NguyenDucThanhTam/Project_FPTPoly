@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rs.project_result_mob">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".Main_Menu_Activity"
+            android:label="@string/title_activity_main__menu_"
+            android:theme="@style/DrawerNavMenu" />
+        <activity android:name=".Fragment_Home"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Fragment_Attraction_Places" />
+        <activity android:name=".Fragment_Best_Check_In" />
+        <activity android:name=".Fragment_News" />
+        <activity android:name=".Fragment_City_Safely" />
+        <activity android:name=".Fragment_Check_List" />
+        <activity android:name=".Fragment_Travel_Tips" />
+        <activity android:name=".Fragment_Travel_Guide" />
+        <activity android:name=".Fragment_Gallery" />
+        <activity android:name=".Fragment_Feedback" />
+        <activity android:name=".Fragment_About_Us"
+            android:theme="@style/AboutUs"/>
+    </application>
+
+</manifest>

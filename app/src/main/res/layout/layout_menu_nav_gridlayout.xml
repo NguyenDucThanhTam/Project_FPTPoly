@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/br_menu_nav"
+    tools:context=".Main_Menu_Activity"
+    tools:showIn="@layout/activity_main__menu_">
+
+
+    <!-- Menu Item -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Item  -->
+        <LinearLayout
+            android:id="@+id/item_home"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_item"
+                android:layout_height="@dimen/size_icon_item"
+                android:src="@mipmap/ic_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                android:text="@string/txt_item_home"
+                android:textSize="@dimen/fontSize_text_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_attraction_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_item"
+                android:layout_height="@dimen/size_icon_item"
+                android:src="@mipmap/ic_plan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                android:text="@string/attraction_place"
+                android:textSize="@dimen/fontSize_text_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_item"
+                android:layout_height="@dimen/size_icon_item"
+                android:src="@mipmap/ic_alert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                android:text="@string/txt_item_alert"
+                android:textSize="@dimen/fontSize_text_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_item"
+                android:layout_height="@dimen/size_icon_item"
+                android:src="@mipmap/ic_city" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                android:text="@string/txt_item_city"
+                android:textSize="@dimen/fontSize_text_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_check_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_item"
+                android:layout_height="@dimen/size_icon_item"
+                android:src="@mipmap/ic_checklist" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                android:text="@string/txt_item_checklist"
+                android:textSize="@dimen/fontSize_text_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titile_gr_item_booking" />
+
+            <LinearLayout
+                android:id="@+id/item_check_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_item"
+                    android:layout_height="@dimen/size_icon_item"
+                    android:src="@mipmap/ic_travel_tips" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                    android:text="@string/txt_item_tips"
+                    android:textSize="@dimen/fontSize_text_item" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/item_check_guides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_item"
+                    android:layout_height="@dimen/size_icon_item"
+                    android:src="@mipmap/ic_travel_guide" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                    android:text="@string/txt_item_guides"
+                    android:textSize="@dimen/fontSize_text_item" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titile_gr_item_more" />
+
+            <LinearLayout
+                android:id="@+id/item_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_item"
+                    android:layout_height="@dimen/size_icon_item"
+                    android:src="@mipmap/ic_gallery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                    android:text="@string/txt_item_gallery"
+                    android:textSize="@dimen/fontSize_text_item" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/item_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_item"
+                    android:layout_height="@dimen/size_icon_item"
+                    android:src="@mipmap/ic_feedback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                    android:text="@string/txt_item_feedback"
+                    android:textSize="@dimen/fontSize_text_item" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_item"
+                    android:layout_height="@dimen/size_icon_item"
+                    android:src="@mipmap/ic_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+                    android:text="@string/txt_item_about"
+                    android:textSize="@dimen/fontSize_text_item" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_settings" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_logout" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_check_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="574dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_item"
+            android:layout_height="@dimen/size_icon_item"
+            android:src="@mipmap/ic_bestcheckin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginLeft_txt_icon_item"
+            android:text="@string/txt_item_checkin"
+            android:textSize="@dimen/fontSize_text_item" />
+    </LinearLayout>
+
+
+</RelativeLayout>
