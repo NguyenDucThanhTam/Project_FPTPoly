@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.rs.project_result_mob"
-        minSdkVersion 20
+        minSdkVersion 21
         targetSdkVersion 26
 
         renderscriptTargetApi 18

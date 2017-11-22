@@ -70,5 +70,12 @@
     <string name="name5">Nguyen Chi Dat</string>
     <string name="company">Company:</string>
     <string name="company_name">FPT Polytechnic Ho Chi  Minh</string>
+    <string name="city_overview">City Overview</string>
+    <string name="safety"> Safety </string>
+    <string name="health"> Health </string>
+    <string name="calendar"> Calendar </string>
+    <string name="arrival"> Arrival </string>
+    <string name="getting_around"> Getting Around </string>
+
 
 </resources>

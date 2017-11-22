@@ -1,16 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.rs.project_result_mob.Fragment_City_Safely">
+
     <TextView
-        android:background="@color/colorAccent"
-        android:textStyle="bold"
-        android:textSize="50dp"
-        android:gravity="center"
-        android:text="Fragment City"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:background="@drawable/citysafety"/>
+
+    <LinearLayout
+        android:id="@+id/item_city_overview"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_item"
+            android:layout_height="@dimen/size_icon_item"
+            android:src="@mipmap/ic_city_overview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/marginLeft_txt_icon_item"
+            android:text="@string/city_overview"
+            android:textSize="@dimen/fontSize_text_item" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_arrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_below="@+id/item_city_overview"
+        android:padding="15dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_item"
+            android:layout_height="@dimen/size_icon_item"
+            android:src="@mipmap/ic_arrival"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft_txt_icon_item"
+            android:textColor="@color/white"
+            android:text="@string/arrival"
+            android:textSize="@dimen/fontSize_text_item" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_getting_around"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_below="@+id/item_arrival"
+        android:padding="15dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_item"
+            android:layout_height="@dimen/size_icon_item"
+            android:src="@mipmap/ic_getting_around"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft_txt_icon_item"
+            android:textColor="@color/white"
+            android:text="@string/getting_around"
+            android:textSize="@dimen/fontSize_text_item" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_safety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_below="@+id/item_getting_around"
+        android:padding="15dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_item"
+            android:layout_height="@dimen/size_icon_item"
+            android:src="@mipmap/ic_safety"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft_txt_icon_item"
+            android:textColor="@color/white"
+            android:text="@string/safety"
+            android:textSize="@dimen/fontSize_text_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_below="@+id/item_safety"
+        android:padding="15dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_item"
+            android:layout_height="@dimen/size_icon_item"
+            android:src="@mipmap/ic_health"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft_txt_icon_item"
+            android:textColor="@color/white"
+            android:text="@string/health"
+            android:textSize="@dimen/fontSize_text_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_below="@+id/item_health"
+        android:padding="15dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_item"
+            android:layout_height="@dimen/size_icon_item"
+            android:src="@mipmap/ic_calendar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft_txt_icon_item"
+            android:textColor="@color/white"
+            android:text="@string/calendar"
+            android:textSize="@dimen/fontSize_text_item" />
+    </LinearLayout>
+</RelativeLayout>
