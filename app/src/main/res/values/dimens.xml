@@ -68,4 +68,7 @@
     <dimen name="marginTop_nameTeam_activityAboutUs">10dp</dimen>
     <dimen name="marginTop_nameCompany_activityAboutUs">10dp</dimen>
 
+    <!-- City Activity-->
+    <dimen name="size_icon_city_oveview">40dp</dimen>
+
 </resources>

@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context="com.example.rs.project_result_mob.Fragment_City_Safely">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/citysafety"/>
+        android:background="@drawable/br_city_safety"/>
 
     <LinearLayout
         android:id="@+id/item_city_overview"
@@ -22,9 +23,9 @@
         android:focusable="true">
 
         <ImageView
-            android:layout_width="@dimen/size_icon_item"
-            android:layout_height="@dimen/size_icon_item"
-            android:src="@mipmap/ic_city_overview" />
+            android:layout_width="@dimen/size_icon_city_oveview"
+            android:layout_height="@dimen/size_icon_city_oveview"
+            android:src="@mipmap/ic_city_over_view" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
             android:layout_gravity="center_vertical"
             android:textColor="@color/white"
             android:layout_marginStart="@dimen/marginLeft_txt_icon_item"
+            android:textStyle="bold"
             android:text="@string/city_overview"
             android:textSize="@dimen/fontSize_text_item" />
     </LinearLayout>
@@ -49,8 +51,8 @@
         android:focusable="true">
 
         <ImageView
-            android:layout_width="@dimen/size_icon_item"
-            android:layout_height="@dimen/size_icon_item"
+            android:layout_width="@dimen/size_icon_city_oveview"
+            android:layout_height="@dimen/size_icon_city_oveview"
             android:src="@mipmap/ic_arrival"
             />
 
@@ -77,8 +79,8 @@
         android:focusable="true">
 
         <ImageView
-            android:layout_width="@dimen/size_icon_item"
-            android:layout_height="@dimen/size_icon_item"
+            android:layout_width="@dimen/size_icon_city_oveview"
+            android:layout_height="@dimen/size_icon_city_oveview"
             android:src="@mipmap/ic_getting_around"
             />
 
@@ -105,8 +107,8 @@
         android:focusable="true">
 
         <ImageView
-            android:layout_width="@dimen/size_icon_item"
-            android:layout_height="@dimen/size_icon_item"
+            android:layout_width="@dimen/size_icon_city_oveview"
+            android:layout_height="@dimen/size_icon_city_oveview"
             android:src="@mipmap/ic_safety"
             />
 
@@ -132,8 +134,8 @@
         android:focusable="true">
 
         <ImageView
-            android:layout_width="@dimen/size_icon_item"
-            android:layout_height="@dimen/size_icon_item"
+            android:layout_width="@dimen/size_icon_city_oveview"
+            android:layout_height="@dimen/size_icon_city_oveview"
             android:src="@mipmap/ic_health"
             />
 
@@ -159,8 +161,8 @@
         android:focusable="true">
 
         <ImageView
-            android:layout_width="@dimen/size_icon_item"
-            android:layout_height="@dimen/size_icon_item"
+            android:layout_width="@dimen/size_icon_city_oveview"
+            android:layout_height="@dimen/size_icon_city_oveview"
             android:src="@mipmap/ic_calendar"
             />
 
