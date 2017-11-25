@@ -70,5 +70,7 @@
 
     <!-- City Activity-->
     <dimen name="size_icon_city_oveview">40dp</dimen>
+    <dimen name="paddingTop_city_safety">20sp</dimen>
+    <dimen name="paddingLeft_city_safety">20dp</dimen>
 
 </resources>
