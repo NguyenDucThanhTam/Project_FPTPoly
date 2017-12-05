@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rs.project_result_mob">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -23,8 +25,9 @@
             android:name=".Main_Menu_Activity"
             android:label="@string/title_activity_main__menu_"
             android:theme="@style/DrawerNavMenu" />
-        <activity android:name=".Fragment_Home"
-            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Fragment_Home"
+            android:theme="@style/AppTheme" />
         <activity android:name=".Fragment_Attraction_Places" />
         <activity android:name=".Fragment_Best_Check_In" />
         <activity android:name=".Fragment_News" />
@@ -34,8 +37,10 @@
         <activity android:name=".Fragment_Travel_Guide" />
         <activity android:name=".Fragment_Profile" />
         <activity android:name=".Fragment_Feedback" />
-        <activity android:name=".Fragment_About_Us"
-            android:theme="@style/AboutUs"/>
+        <activity
+            android:name=".Fragment_About_Us"
+            android:theme="@style/AboutUs" />
+        <activity android:name=".WelcomeActivity"></activity>
     </application>
 
 </manifest>
