@@ -32,7 +32,7 @@
         <activity android:name=".Fragment_Check_List" />
         <activity android:name=".Fragment_Travel_Tips" />
         <activity android:name=".Fragment_Travel_Guide" />
-        <activity android:name=".Fragment_Gallery" />
+        <activity android:name=".Fragment_Profile" />
         <activity android:name=".Fragment_Feedback" />
         <activity android:name=".Fragment_About_Us"
             android:theme="@style/AboutUs"/>
