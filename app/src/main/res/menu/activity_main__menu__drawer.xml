@@ -39,9 +39,9 @@
             android:icon="@mipmap/ic_travel_guide"
             android:title="Travel Guides" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@mipmap/ic_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_settings"
+            android:title="Profile" />
         <item
             android:id="@+id/nav_feedback"
             android:icon="@mipmap/ic_feedback"

@@ -4,7 +4,11 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.RelativeLayout;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 //        blurBackground();
-    }
+
+        }
+
 
 //    private void blurBackground() {
 //        RelativeLayout  layout = (RelativeLayout)findViewById(R.id.layout_first);

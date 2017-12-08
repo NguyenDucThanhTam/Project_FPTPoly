@@ -1,14 +1,9 @@
 package com.example.rs.project_result_mob;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.support.design.widget.Snackbar;
 
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -17,15 +12,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.rs.project_result_mob.ItemRecyclerView.itemRecycler;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main_Menu_Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -245,9 +240,14 @@ public class Main_Menu_Activity extends AppCompatActivity
                     Toast.makeText(this, ex+"", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.nav_gallery:
+            case R.id.nav_profile:
                 try{
-                    fragment = new Fragment_Gallery();
+                    fragment = new Fragment_Profile();
+                    //ket noi vs firebase
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myRef = database.getReference("message");
+
+                    myRef.setValue("");
                 }
                 catch (Exception ex){
                     Toast.makeText(this, ex+"", Toast.LENGTH_SHORT).show();

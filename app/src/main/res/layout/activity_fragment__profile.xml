@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txtOr"
+    android:orientation="vertical"
+    tools:context="com.example.rs.project_result_mob.Fragment_Profile">
+
+    <LinearLayout
+        android:id="@+id/titile_profile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txttittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txt_item_tittleprofile"
+            android:textSize="@dimen/size_txt_tittleprofile" />
+
+        <TextView
+
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txt_item_tittleprofile2"
+            android:textSize="@dimen/size_txt_tittleprofile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_item_nameprofile"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+
+            <EditText
+                android:id="@+id/edtname_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter full name"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_item_addressprofile"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+
+            <EditText
+                android:id="@+id/edtaddress_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="@string/txt_item_numberprofile"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+
+            <EditText
+                android:id="@+id/edtnumber_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtbloodtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_item_bloodtypeprofile"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+
+            <EditText
+                android:id="@+id/edtbloodtype_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_txt_tittleprofile" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tableRow_allergies_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_item_allergiesprofile"
+                    android:textSize="@dimen/size_txt_allergesprofile" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroud1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radyes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textSize="@dimen/size_txt_tittleprofile" />
+
+                    <RadioButton
+                        android:id="@+id/radno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/size_txt_tittleprofile" />
+                </RadioGroup>
+
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnadd_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="120dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorAccent"
+                    android:text="ADD"
+                    android:textSize="@dimen/size_txt_tittleprofile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/edtdelete_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="DELETE"
+                    android:textSize="@dimen/size_txt_tittleprofile" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lvshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
