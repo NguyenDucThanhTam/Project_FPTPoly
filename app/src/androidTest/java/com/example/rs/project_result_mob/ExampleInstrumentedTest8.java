@@ -45,7 +45,6 @@ public class ExampleInstrumentedTest8 {
 
         onView(withId(R.id.btnLoginUser_LoginActivity)).perform(click());
 
-        onView(withId(R.id.spinner_contain_header_side)).check(matches(ViewMatchers.isDisplayed()));
 
     }
 }

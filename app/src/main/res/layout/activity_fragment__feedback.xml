@@ -1,90 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.rs.project_result_mob.Fragment_Feedback">
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/backgroud1"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="FeedBack"
-            android:textColor="#fff"
-            android:textSize="50dp"
-            android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:background="@drawable/br_feedback"
+        android:orientation="vertical"
+        tools:context="com.example.rs.project_result_mob.Fragment_Feedback">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/pTB_feedback_lgo"
+                android:paddingBottom="@dimen/pTB_feedback_lgo"
+                android:gravity="center"
+                android:text="FeedBack"
+                android:textColor="#fff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="@dimen/height_edt_feedback"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_user" />
 
                 <android.support.design.widget.TextInputLayout
-                    android:textColorHint="#fff"
                     android:id="@+id/Username_input_layout"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true">
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="8"
+                    android:textColorHint="#fff">
 
                     <android.support.design.widget.TextInputEditText
                         android:id="@+id/Username_input_name"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"
-                        android:drawableLeft="@drawable/user"
-                        android:drawablePadding="20dp"
+                        android:layout_marginTop="10dp"
                         android:ems="5"
-                        android:hint="UserName"
                         android:paddingLeft="10dp"
+
+                        android:hint="UserName"
                         android:textColor="#fff"
+                        android:background="@android:color/transparent"
                         android:textStyle="bold" />
                 </android.support.design.widget.TextInputLayout>
 
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_edt_feedback"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_call" />
+
                 <android.support.design.widget.TextInputLayout
-                    android:textColorHint="#fff"
                     android:id="@+id/Phone_input_layout"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true">
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="8"
+                    android:textColorHint="#fff">
 
                     <EditText
-
                         android:id="@+id/Phone_input_numbers"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"
                         android:layout_marginTop="10dp"
-                        android:drawableLeft="@drawable/phone"
-                        android:drawablePadding="20dp"
                         android:ems="10"
-                        android:hint="Phone Numbers"
-                        android:inputType="number"
                         android:paddingLeft="10dp"
+
+                        android:hint="Phone Numbers"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
                         android:textColor="#fff"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
+
                 </android.support.design.widget.TextInputLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_edt_feedback"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_mail" />
+
                 <android.support.design.widget.TextInputLayout
-                    android:textColorHint="#fff"
                     android:id="@+id/Email_input_layout"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true">
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="8"
+                    android:textColorHint="#fff">
 
                     <EditText
                         android:id="@+id/Email_input_email"
@@ -93,8 +146,7 @@
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"
                         android:layout_marginTop="15dp"
-                        android:drawableLeft="@drawable/email"
-                        android:drawablePadding="20dp"
+                        android:background="@android:color/transparent"
                         android:ems="10"
                         android:hint="Email"
                         android:inputType="textEmailAddress"
@@ -103,49 +155,65 @@
                         android:textStyle="bold" />
                 </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:textColorHint="#fff"
-                    android:id="@+id/Message_input_layout"
-                    android:layout_width="match_parent"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true">
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_mess" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/Message_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="8"
+                    android:textColorHint="#fff">
 
                     <EditText
                         android:id="@+id/Message_input_message"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"
                         android:layout_marginTop="10dp"
-                        android:drawableLeft="@drawable/message"
-                        android:drawablePadding="20dp"
+                        android:background="@android:color/transparent"
                         android:ems="10"
                         android:hint="Your Mesagge"
                         android:inputType="textLongMessage"
-                        android:paddingBottom="55dp"
                         android:paddingLeft="10dp"
                         android:textColor="#fff"
 
                         android:textStyle="bold" />
                 </android.support.design.widget.TextInputLayout>
 
-                <Button
-                    android:id="@+id/btn_send"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/button1"
 
-                    android:text="SEND"
-                    android:textAllCaps="false"
-                    android:textColor="#fff" />
             </LinearLayout>
+
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+
+            android:text="SEND"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
 
     </LinearLayout>
-</LinearLayout>
 
