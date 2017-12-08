@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Project_FPTPoly.iml" filepath="$PROJECT_DIR$/Project_FPTPoly.iml" />
+      <module fileurl="file://D:\Gihub\Project_FPTPoly\Project_FPTPoly.iml" filepath="D:\Gihub\Project_FPTPoly\Project_FPTPoly.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Gihub\Project_FPTPoly\app\app.iml" filepath="D:\Gihub\Project_FPTPoly\app\app.iml" />
     </modules>
   </component>
 </project>
