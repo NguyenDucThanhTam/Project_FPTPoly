@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
@@ -26,11 +27,8 @@ public class Fragment_Profile extends Fragment {
     TextView tv;
     Button bt;
     TextView lvshow;
-    EditText edtaddress;
-    EditText edtnumber;
-    EditText edtbloodtype;
-    RadioButton radyes;
-    RadioButton radno;
+    EditText edtaddress, edtname, edtnumber, edtbloodtype;
+    RadioButton radyes, radno;
 
 
     @Nullable
@@ -39,7 +37,7 @@ public class Fragment_Profile extends Fragment {
         View view = inflater.inflate(R.layout.activity_fragment__profile, container, false);
         tv = (TextView) view.findViewById(R.id.lvshow);
         bt = (Button) view.findViewById(R.id.btnadd_profile);
-        et = (EditText) view.findViewById(R.id.edtname_profile);
+        edtname = (EditText) view.findViewById(R.id.edtname_profile);
         edtaddress = (EditText) view.findViewById(R.id.edtaddress_profile);
         edtnumber = (EditText) view.findViewById(R.id.edtnumber_profile);
         edtbloodtype = (EditText) view.findViewById(R.id.edtbloodtype_profile);
@@ -65,7 +63,13 @@ public class Fragment_Profile extends Fragment {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nut_ten.setValue(et.getText().toString() + "\n"
+                edtname.setEnabled(false);
+                edtbloodtype.setEnabled(false);
+                edtnumber.setEnabled(false);
+                radyes.setEnabled(false);
+                edtaddress.setEnabled(false);
+
+                nut_ten.setValue(edtname.getText().toString() + "\n"
                         + edtaddress.getText().toString() + "\n"
                         + edtnumber.getText().toString() + "\n"
                         + edtbloodtype.getText().toString() + "\n"
