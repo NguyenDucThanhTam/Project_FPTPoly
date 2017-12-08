@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "736440921195",
+    "project_id": "fptpolyproject1"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736440921195:android:27d689d63f1b7a06",
+        "android_client_info": {
+          "package_name": "com.google.samples.quickstart.signin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736440921195-negker2r53jgckfhep17vch7n03eqds2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.samples.quickstart.signin",
+            "certificate_hash": "e25cdb604542a9beb249c3f7b167aeb6609241e2"
+          }
+        },
+        {
+          "client_id": "736440921195-84ipglu3t82n9bk0h66u7pkumom35vpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOnlyx3gxbP0DlzHYQlTuub65543FtMek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

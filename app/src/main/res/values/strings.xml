@@ -76,6 +76,8 @@
     <string name="calendar"> Calendar </string>
     <string name="arrival"> Arrival </string>
     <string name="getting_around"> Getting Around </string>
+    <string name="title">Title</string>
+    <string name="description">description</string>
 
 
 </resources>

@@ -31,14 +31,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initEvent() {
-        btnImageExit.setOnClickListener(this);
         btnLoginUser.setOnClickListener(this);
         btnLoginFacebook.setOnClickListener(this);
         btnLoginGg.setOnClickListener(this);
     }
 
     private void initMapped() {
-        btnImageExit = (ImageView) findViewById(R.id.btnImageExit);
         btnLoginGg = (Button) findViewById(R.id.btnLoginGoogle_LoginActivity);
         btnLoginFacebook = (Button) findViewById(R.id.btnLoginFaceBook_LoginActivity);
         btnLoginUser = (Button) findViewById(R.id.btnLoginUser_LoginActivity);
@@ -55,15 +53,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnImageExit:
-                try {
-                    // Close Activity
-                    Toast.makeText(this, "!!! Thank for used !!!", Toast.LENGTH_SHORT).show();
-                    finishAffinity();
-                } catch (Exception ex) {
-                    Toast.makeText(this, ex + "", Toast.LENGTH_SHORT).show();
-                }
-                break;
+
             case R.id.btnLoginFaceBook_LoginActivity:
                 try {
 //                    intentLoginFaceBook();

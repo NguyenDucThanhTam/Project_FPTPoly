@@ -14,29 +14,7 @@
         android:fitsSystemWindows="true"
         android:adjustViewBounds="true"/>
 
-    <RelativeLayout
-        android:background="@drawable/br_spinner"
-        android:layout_width="@dimen/width_spinner"
-        android:layout_height="25dp">
-        <Spinner
-            android:id="@+id/spinner_contain_header_side"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
-            android:textDirection="inherit"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:layout_marginLeft="5dp"
-            android:spinnerMode="dropdown"
-            />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/ic_drop_down" />
-    </RelativeLayout>
+
 
     <!--weather-->
 </RelativeLayout>

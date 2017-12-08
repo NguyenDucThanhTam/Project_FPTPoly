@@ -94,16 +94,9 @@ public class Main_Menu_Activity extends AppCompatActivity
                 "Can Gio District"
         };
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner_contain_header_side);
         //Adapter
-        ArrayAdapter<String> adapterSpinner = new ArrayAdapter<String>(
-                Main_Menu_Activity.this,
-                android.R.layout.simple_spinner_dropdown_item,
-                arrDistrict
-        );
-        spinner.setAdapter(adapterSpinner);
 
-        listRecyclerView();
+
 //        spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
 //            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

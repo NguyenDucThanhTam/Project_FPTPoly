@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private  static int SPLASH_TIME_OUT = 3000;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -30,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
 //        blurBackground();
     }
 
-    private void blurBackground() {
-        RelativeLayout  layout = (RelativeLayout)findViewById(R.id.layout_first);
-        layout.getBackground().setAlpha(25);
-    }
+//    private void blurBackground() {
+//        RelativeLayout  layout = (RelativeLayout)findViewById(R.id.layout_first);
+//        layout.getBackground().setAlpha(25);
+//    }
 }

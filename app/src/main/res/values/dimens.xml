@@ -15,7 +15,7 @@
     <dimen name="margin_LR_or">12dp</dimen>
     <dimen name="marginTop_txt_wel..">35dp</dimen>
     <dimen name="fontSize_txt_att">40dp</dimen>
-    <dimen name="fontSize_clock">30dp</dimen>
+    <dimen name="fontSize_clock">20dp</dimen>
     <dimen name="marginTop_txt_att_parent">73dp</dimen>
     <dimen name="marginTop_logoText_parent">5dp</dimen>
     <dimen name="marginTop_please_logo">10dp</dimen>
