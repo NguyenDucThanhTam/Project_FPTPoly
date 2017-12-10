@@ -137,6 +137,14 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="title_activity_fragment__map">Map</string>
+    <string name="txtWelcome">Welcome to Ho Chi Minh City</string>
+    <string name="txt_BestActractionPlace">Top Best Attraction Place</string>
+    <string name="content_Welcome">
+        Ho Chi Minh City (HCMc) is VietNam at its mostdizzying : a high-octane city of commerce and culture
+        that has driven the country forward with its putsating energy. A chaotic whirl, the city breathes life
+        and vitality into all who settle here, and visitors cannot help but be hauled along for the ride.
+    </string>
 
 
 </resources>

@@ -3,6 +3,7 @@ package com.example.rs.project_result_mob;
 import android.os.Bundle;
 import android.app.Fragment;
 
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -33,12 +34,12 @@ public class Main_Menu_Activity extends AppCompatActivity
             "Name 3",
             "Name 4"
     };
-    int IMAGE_DATA[] = {
-            R.drawable.demo1,
-            R.drawable.demo2,
-            R.drawable.demo3,
-            R.drawable.demo4
-    };
+//    int IMAGE_DATA[] = {
+//            R.drawable.demo1,
+//            R.drawable.demo2,
+//            R.drawable.demo3,
+//            R.drawable.demo4
+//    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +48,6 @@ public class Main_Menu_Activity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        spinnerHolder();
 
 
 
@@ -61,54 +61,16 @@ public class Main_Menu_Activity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    private void spinnerHolder() {
-        String[] arrDistrict = new String[]{
-                "District 1",
-                "District 2",
-                "District 3",
-                "District 4",
-                "District 5",
-                "District 6",
-                "District 7",
-                "District 8",
-                "District 9",
-                "District 10",
-                "District 11",
-                "District 12",
-                "Go Vap District",
-                "Tan Binh District",
-                "Tan Phu District",
-                "Binh Thanh District",
-                "Phu Nhuan District",
-                "Thu Duc District",
-                "Binh Tan District",
-                "Binh Chanh District",
-                "Cu Chi District",
-                "Hoc Mon District",
-                "Nha Be District",
-                "Can Gio District"
-        };
 
-        //Adapter
-
-
-//        spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(Main_Menu_Activity.this, "click", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
-    }
 
     private void listRecyclerView() {
-        listItem.clear();
-        for(int i = 0; i<NAME_DATA.length;i++){
-            itemRecycler item = new itemRecycler();
-            item.setName(NAME_DATA[i]);
-            item.setImageIdAvatar(IMAGE_DATA[i]);
-            listItem.add(item);
-        }
+//        listItem.clear();
+//        for(int i = 0; i<NAME_DATA.length;i++){
+//            itemRecycler item = new itemRecycler();
+//            item.setName(NAME_DATA[i]);
+//            item.setImageIdAvatar(IMAGE_DATA[i]);
+//            listItem.add(item);
+//        }
 //        getActivity()
     }
 
@@ -186,7 +148,7 @@ public class Main_Menu_Activity extends AppCompatActivity
                 break;
             case R.id.nav_plan:
                 try{
-                     fragment = new Fragment_Attraction_Places();
+//                    Toast.makeText(fragmentActivity, "Development", Toast.LENGTH_SHORT).show();
                 }
                 catch (Exception ex){
                     Toast.makeText(this, ex+"", Toast.LENGTH_SHORT).show();

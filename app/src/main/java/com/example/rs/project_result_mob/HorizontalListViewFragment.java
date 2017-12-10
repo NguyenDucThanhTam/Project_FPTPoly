@@ -32,12 +32,12 @@ public class HorizontalListViewFragment extends android.support.v4.app.Fragment 
             "Name 3",
             "Name 4"
     };
-    int DATA_IMAGES[] = {
-            R.drawable.demo1,
-            R.drawable.demo2,
-            R.drawable.demo3,
-            R.drawable.demo4
-    };
+//    int DATA_IMAGES[] = {
+//            R.drawable.demo1,
+//            R.drawable.demo2,
+//            R.drawable.demo3,
+//            R.drawable.demo4
+//    };
     String DATA_DESCRIPTION[] = {
             "Des 1",
             "Des 2",
@@ -49,15 +49,15 @@ public class HorizontalListViewFragment extends android.support.v4.app.Fragment 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        listItems.clear();
-        for (int i = 0; i < DATA_NAME.length; i++) {
-            itemRecycler item = new itemRecycler();
-            item.setName(DATA_NAME[i]);
-            item.setEtc(DATA_DESCRIPTION[i]);
-            item.setImageIdAvatar(DATA_IMAGES[i]);
-            listItems.add(item);
-        }
-        getActivity().setTitle("Place List");
+//        listItems.clear();
+//        for (int i = 0; i < DATA_NAME.length; i++) {
+//            itemRecycler item = new itemRecycler();
+//            item.setName(DATA_NAME[i]);
+//            item.setEtc(DATA_DESCRIPTION[i]);
+//            item.setImageIdAvatar(DATA_IMAGES[i]);
+//            listItems.add(item);
+//        }
+//        getActivity().setTitle("Place List");
     }
 
     @Nullable

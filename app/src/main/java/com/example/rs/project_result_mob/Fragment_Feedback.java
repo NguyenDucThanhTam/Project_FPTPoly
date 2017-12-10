@@ -28,44 +28,42 @@ public class Fragment_Feedback extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_fragment__feedback, container, false);
-        Username = view.findViewById(R.id.Username_input_name);
-        Phone = view.findViewById(R.id.Phone_input_numbers);
-        Email = view.findViewById(R.id.Email_input_email);
-        EditText Message = view.findViewById(R.id.Message_input_message);
-        TextInputLayout UserNameLayout = view.findViewById(R.id.Username_input_layout);
-        TextInputLayout PhoneLayout = view.findViewById(R.id.Phone_input_layout);
-        TextInputLayout EmailLayout = view.findViewById(R.id.Email_input_layout);
-        TextInputLayout MessageLayout = view.findViewById(R.id.Message_input_layout);
-        Button btn_send = view.findViewById(R.id.btn_send);
+        View view = inflater.inflate ( R.layout.activity_fragment__feedback, container, false );
+        Username = view.findViewById ( R.id.Username_input_name );
+        Phone = view.findViewById ( R.id.Phone_input_numbers );
+        Email = view.findViewById ( R.id.Email_input_email );
+        Message = view.findViewById ( R.id.Message_input_message );
+        UserNameLayout = view.findViewById ( R.id.Username_input_layout );
+        PhoneLayout = view.findViewById ( R.id.Phone_input_layout );
+        EmailLayout = view.findViewById ( R.id.Email_input_layout );
+        MessageLayout = view.findViewById ( R.id.Message_input_layout );
+        Button btn_send = view.findViewById ( R.id.btn_send );
 
-        btn_send.setOnClickListener(new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View view) {
-                                            CheckEditText();
-                                        }
-                                    }
+        btn_send.setOnClickListener ( new View.OnClickListener () {
+                                          @Override
+                                          public void onClick(View view) {
+                                              CheckEditText ();
+                                          }
+                                      }
         );
         return view;
     }
 
     public void CheckEditText() {
-        Toast.makeText(getActivity(), "Successfully", Toast.LENGTH_SHORT).show();
-        if (Username.getText().toString().trim().equals("")) {
-            UserNameLayout.setError("Please enter your UserName");
+        Toast.makeText ( getActivity (), "Successfully", Toast.LENGTH_SHORT ).show ();
+        if (Username.getText ().toString ().trim ().equals ( "" )) {
+            UserNameLayout.setError ( "Please enter your UserName" );
 
-        } else {
-            if (Phone.getText().toString().trim().equals("")) {
-                PhoneLayout.setError("Please enter your Phone");
-            } else {
-                if (Email.getText().toString().trim().equals("")) {
-                    EmailLayout.setError("Please enter your Email");
-                    // Email.setBackgroundResource(R.drawable.customedittext);
-                }
-            }
-            if (Message.getText().toString().trim().equals("")) {
-                MessageLayout.setError("Please enter your Message");
-            }
+        }
+        if (Phone.getText ().toString ().trim ().equals ( "" )) {
+            PhoneLayout.setError ( "Please enter your Phone" );
+        }
+        if (Email.getText ().toString ().trim ().equals ( "" )) {
+            EmailLayout.setError ( "Please enter your Email" );
+            // Email.setBackgroundResource(R.drawable.customedittext);
+        }
+        if (Message.getText ().toString ().trim ().equals ( "" )) {
+            MessageLayout.setError ( "Please enter your Message" );
         }
     }
 }

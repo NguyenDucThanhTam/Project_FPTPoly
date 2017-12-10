@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.rs.project_result_mob.Fragment_Home">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,9 +15,80 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include layout="@layout/layout_content_header_side" />
-            <include layout="@layout/layout_contain_content_side"/>
+            <ImageView
+                android:id="@+id/br_contain_header_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/br_contain_header" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".Main_Menu_Activity">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_txt_wel"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/txtWelcome"
+                    android:textSize="@dimen/fontSize_Welcome"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@color/view_welcome">
+
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mLR_content_wel"
+                    android:layout_marginTop="50dp"
+                    android:gravity="start"
+                    android:text="@string/content_Welcome"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_txt_wel"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/txt_BestActractionPlace"
+                    android:textSize="@dimen/fontSize_Welcome"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@color/view_welcome" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
