@@ -5,6 +5,7 @@
     android:id="@+id/layoutLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context="com.example.rs.project_result_mob.LoginActivity">
 
     <ImageView
@@ -28,7 +29,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:layout_marginBottom="@dimen/marginBottom_button">
 
             <Button
@@ -36,17 +37,22 @@
                 android:layout_width="@dimen/width_button"
                 android:layout_height="@dimen/height_button"
                 android:background="@drawable/btn_login_gg"
+                android:drawableLeft="@drawable/search"
+                android:paddingLeft="20dp"
                 android:text="@string/lginGoogle"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="@dimen/fontSize_btn"
                 android:textStyle="bold" />
+
+
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/btnLoginFaceBook_LoginActivity"
@@ -58,6 +64,12 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/fontSize_btn"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook" />
+
         </RelativeLayout>
 
         <LinearLayout

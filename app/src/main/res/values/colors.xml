@@ -16,4 +16,11 @@
     <color name="medium_grey">#9E9E9E</color>
     <color name="button_grey">#757575</color>
     <color name="view_welcome">#e7ff0000</color>
+
+    <!-- Login Goolge button -->
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
 </resources>

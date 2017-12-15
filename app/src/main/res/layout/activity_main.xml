@@ -4,7 +4,6 @@
     android:id="@+id/layout_login_head_LoginActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@drawable/br_welcome"
 
     android:orientation="vertical">
@@ -13,13 +12,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:weightSum="10"
         android:orientation="vertical">
 
         <DigitalClock
             android:id="@+id/digital_LoginActivity"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
             android:layout_gravity="center"
             android:textColor="@color/clock"
             android:textSize="@dimen/fontSize_clock"
@@ -27,15 +27,17 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginTop_txt_wel.."
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
             android:text="@string/welcome"
             android:textColor="@color/white"
             android:textSize="@dimen/fontSize_txt_wel..." />
         <!-- LOGO TEXT -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="7.5"
             android:layout_marginTop="@dimen/marginTop_logoText_parent"
             android:gravity="center">
 
@@ -61,7 +63,14 @@
                 android:textSize="@dimen/fontSize_txt_att" />
 
         </RelativeLayout>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:gravity="right|center"
+            android:layout_marginRight="20dp"
+            android:text="@string/skip"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
     <!--<TextView-->

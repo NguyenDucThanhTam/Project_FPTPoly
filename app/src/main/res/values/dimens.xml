@@ -2,7 +2,7 @@
 <resources>
     <!-- Login -->
     <dimen name="size_ic_exit">30dp</dimen>
-    <dimen name="fontSize_btn">20dp</dimen>
+    <dimen name="fontSize_btn">24dp</dimen>
     <dimen name="fontSize_or">20dp</dimen>
     <dimen name="width_button">350dp</dimen>
     <dimen name="height_button">50dp</dimen>
@@ -81,4 +81,9 @@
     <dimen name="fontSize_Welcome">25sp</dimen>
     <dimen name="mLR_content_wel">10dp</dimen>
     <dimen name="height_txt_wel">80dp</dimen>
+
+    <!-- Login Goole Button -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="g_top_margin">30dp</dimen>
 </resources>
